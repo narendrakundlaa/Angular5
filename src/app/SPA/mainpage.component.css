@@ -1,0 +1,22 @@
+.main{
+    border-radius: 25px;
+    width:100%;
+    height: auto;
+    background: linear-gradient(to right, blue,green);
+    font: outline;
+    font-size: 30px;
+     text-align: center;
+     box-shadow: 3px 3px 6px grey;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+   
+}
+/*.routeroutlet{
+    width:  600px;
+    height: 300px;
+    border: 1px solid;
+    position: relative;
+}*/

@@ -1,0 +1,38 @@
+<h1>Pipes in Angular 5 (slice also included here)</h1>
+<br/>
+<div class="default">
+    <h1>Without Pipes</h1>
+        Name : {{name}}
+        <br/> course : {{course}}
+        <br/> email: {{email}}
+        <br/> fee : {{fee}}
+        <br/> Date : {{joinDate}}
+</div>
+
+<div class="main">
+    <h1>Using Pipes </h1>
+        Name : {{name | titlecase}}<br/>
+        course : {{course | uppercase}}<br/>
+        email: {{email | lowercase}}<br/>
+        fee : {{fee | currency: 'INR'}}
+        <br/> Date : {{joinDate | date}}
+</div>
+<div class="slice">
+        <h1>Slice Pipe in array objects</h1>
+        Select Items : <select [(ngModel)] = 'x'>     
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>All</option>
+        </select>
+        <table border="1">
+            <tr *ngFor = 'let i of student | slice : 0 : ( x!= "All" ? x: student.length) '>
+                <td>{{i.sid}}</td>
+                <td>{{i.village}}</td>
+                <td>{{i.state}}</td>
+            </tr>
+        </table>
+</div>

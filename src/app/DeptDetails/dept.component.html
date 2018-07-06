@@ -1,0 +1,22 @@
+<h1>Array of Department Object Details</h1>
+<div style="border: 2px solid; width: 500px; height: auto;">
+    <ul>
+        <li *ngFor = 'let item of dept'>
+            Name is : {{item.sname}}<br/>
+            Location is : {{item.sloc}}<br/>
+            Department is : {{item.depts}}
+            Image : <img src="./assets/images/{{item.img}}" width="100px; height:100px">
+
+        </li>
+        
+    </ul>
+    
+</div>
+<!--Instead of using li just use table tag-->
+<table border="2" style="background: radial-gradient(red, yellow, green)">
+    <tr *ngFor = 'let item of dept'>
+        <td>Name is : {{item.sname}}</td>
+        <td>Location is : {{item.sloc}}</td>
+        <td>Department is : {{item.depts}}</td>
+    </tr>
+</table>

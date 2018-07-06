@@ -1,0 +1,15 @@
+.demo{
+    width: 30%;
+    border: none;
+    border-radius: 25px 0px 25px 25px;
+    border: 1px solid;
+     box-shadow:  5px 5px 10px grey;
+     background: linear-gradient( red, green);
+     color: aliceblue;
+     font-size: 20px;
+   
+}
+table{
+    
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}

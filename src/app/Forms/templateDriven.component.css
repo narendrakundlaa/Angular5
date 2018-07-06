@@ -1,0 +1,14 @@
+.error{
+    color: red;    
+}
+input{
+    box-shadow: 2px 3px 5px blue;
+}
+#demo{
+    width: 250px;
+    height: 100px;
+    box-shadow: 2px 3px 5px grey;
+    position: relative;
+    left: 200px;
+    display: none;
+}

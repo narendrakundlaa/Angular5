@@ -1,0 +1,7 @@
+#button{
+    background: linear-gradient(blue,green);
+    box-shadow: 2px 3px 6px grey;
+    color: white;
+    font-size: 25px;
+    outline: none;
+}

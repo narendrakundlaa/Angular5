@@ -1,0 +1,29 @@
+<h1>Two way Data Binding using ngModel</h1>
+User Name is : <input type="text" [(ngModel)] ='str'><br/>
+Hello {{str}}<br/>
+Do you want Hide below Details ..?
+<input type="checkbox" [(ngModel)] = 'x' />{{x}}
+<div [hidden]='x' [style.border-radius] = 'radius' style="border: 2px solid; width: 300px; height: 200px; background: linear-gradient(red, yellow,blue)">
+<p [style.font-size]= 'fontsize' > Hello <span style="color: white">{{str}}</span></p>
+</div>
+Select Image : <select [(ngModel)] = 'images'>
+<option>image2.jpg</option>
+<option>image3.jpg</option>
+<option>krishna.jpg</option>
+</select><br/>
+Dispaly Image : <img src="./assets/images/{{images}}" width="100px" height="100px">
+
+
+<div>
+    <h3>Select image through Input as URl</h3>  
+   Enter Image URL : <input type="text" [(ngModel)]='images2'><br/>
+<img src="./assets/images/{{images2}}" width="100px" height="100px">
+
+</div>
+<style>
+    img:hover{
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+}
+</style>

@@ -1,0 +1,15 @@
+.demo{
+    border-radius: 10px;
+    color:black;
+    height: 100px;
+    width: 450px;
+    background: blue;
+    padding: 20px;
+    box-shadow:  5px 5px 10px grey;
+    font-size: 25px;    
+}
+.demo:hover{
+    color: white;
+    background: green;
+    border-radius: 25px 5px 25px;
+}

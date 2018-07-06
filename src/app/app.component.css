@@ -1,0 +1,11 @@
+#main{
+    color: green;
+    text-shadow: 2px 3px 5px gray;
+}
+h1{
+    text-shadow: 1px 2px 2px pink;
+}
+h1:hover{
+    text-shadow: 2px 5px 5px blue;
+    cursor: pointer;
+}

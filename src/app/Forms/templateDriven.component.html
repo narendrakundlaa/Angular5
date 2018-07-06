@@ -1,0 +1,7 @@
+<h1>Form Validation using Template Driven in Angular 5</h1>
+<form #form1 = 'ngForm'>
+    First Name: <input type="text" name="t1" [(ngModel)] = 'fname' #t1 = 'ngModel' required/>
+    <span class="error" *ngIf="t1.invalid && t1.dirty">Fill your First Name..</span><br/>
+    <input type="submit" [disabled]='form1.invalid' value="Register" (click) = "get()"/>
+</form>
+<p id="demo"></p>

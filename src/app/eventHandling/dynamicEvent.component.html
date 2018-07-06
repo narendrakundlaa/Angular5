@@ -1,0 +1,25 @@
+<h1>Dynamic Event Handling in Angular 5</h1>
+<fieldset>
+    Student name : <input type='text' [(ngModel)] = 's1' /><br/>
+    Student course : <input type='text' [(ngModel)] = 's2' /><br/>
+    Student Age : <input type='number' [(ngModel)] = 's3' /><br/>
+    Student Photo : 
+    <input type="button" value="Add Students" (click) = 'addItems()'/>
+</fieldset><br/><br/>
+
+<table border="1">
+    <tr>
+        <th>Sno</th>
+        <th>Student Name</th>
+        <th>Course</th>
+        <th>Age</th>
+    </tr>
+    <tr *ngFor = 'let item of array; index as i'>
+        <td>{{i+1}}</td>
+        <td>{{item.sname}}</td>
+        <td>{{item.course}}</td>
+        <td>{{item.age}}</td>
+        <input type="button" value="Remove" (click) = 'removeItems(i)'/>
+        <input type="button" value="select" (click) = 'selectItems(i)'/>
+    </tr>
+</table>

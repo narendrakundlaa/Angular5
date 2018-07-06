@@ -1,0 +1,16 @@
+<h1>Model Driven or Reactive Forms in angular 5</h1>
+<form [formGroup]='customerform'>
+    <fieldset>
+        Name :
+        <input type="text" formControlName='fname' [(ngModel)]='fname'>
+        <span class="error" *ngIf='customerform.controls.fname.invalid && customerform.controls.fname.dirty'>Name required</span>
+        <br/>
+        <br/>
+        Lasr Name : <input type="text" formControlName='lname' [(ngModel)]='lname'>
+        <span class="error" *ngIf='customerform.controls.lname.invalid && customerform.controls.lname.dirty'>Name required</span>
+        <br/>
+        <br/>
+        <input type="button" [disabled]="customerform.invalid" value="Register">
+
+    </fieldset>
+</form>

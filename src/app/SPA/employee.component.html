@@ -1,0 +1,14 @@
+<h1>Employee Details</h1>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Designation</th>
+    </tr>
+    <tr *ngFor = 'let i of emp'>
+        <td>{{i.name}}</td>
+        <td>{{i.age}}</td>
+        <td>{{i.desig}}</td>
+    </tr>
+</table>

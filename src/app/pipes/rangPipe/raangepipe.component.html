@@ -1,0 +1,37 @@
+<h1>Range Pipe</h1>
+Min: <select [(ngModel)] = 'min'>
+    <option>1000</option>
+    <option>2000</option>
+    <option>3000</option>
+    <option>50000</option>
+</select>
+Max:
+<select [(ngModel)]='max'>
+    <option>2000</option>
+    <option>2000</option>
+    <option>6000</option>
+    <option>1500000</option>
+</select>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor='let i of employee | rangepipe: min : max'>
+        <td>{{i.name}}</td>
+        <td>{{i.sal}}</td>
+    </tr>
+</table>
+<br/>
+Minimum : <input type="number" [(ngModel)] = 'minimum'>
+Maximum: maximum<input type="number" [(ngModel)] = 'maximum'>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor='let i of employee | rangepipe: minimum : maximum'>
+        <td>{{i.name}}</td>
+        <td>{{i.sal}}</td>
+    </tr>
+</table>

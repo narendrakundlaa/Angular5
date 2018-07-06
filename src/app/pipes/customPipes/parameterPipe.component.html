@@ -1,0 +1,20 @@
+<h1>pass parameters as a custom pipe</h1>
+select deptno :
+<select [(ngModel)] ='x'>
+    <option>10</option>
+    <option>20</option>
+    <option>30</option>
+    <option>all</option>
+</select>
+<table border="1">
+    <tr>
+        <th>EmpNo</th>
+        <th>Ename</th>
+        <th>Deptno</th>
+    </tr>
+    <tr *ngFor = 'let i of emp | pipeParameters: x'>
+        <td>{{i.eno}}</td>
+        <td>{{i.ename}}</td>
+        <td>{{i.deptno}}</td>
+    </tr>
+</table>
