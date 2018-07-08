@@ -1,0 +1,9 @@
+#GITbutton{
+    background: green;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px grey;
+    outline: none;
+    padding: 15px;
+    color: white;
+    font-size: 25px;
+}
